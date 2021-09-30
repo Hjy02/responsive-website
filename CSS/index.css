@@ -89,13 +89,13 @@ p {
     padding: 16px;
 }
 
-.navbar _logo {
+.navbar_logo {
     font-size: var(--font-medium);
     color: var(--color--white);
     font-weight: var(--weight-bold);
 }
 
-.navbar__menu{
+.navbar_menu{
     display: flex;
 }
 .navbar__menu__item {
