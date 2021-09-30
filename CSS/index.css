@@ -1,6 +1,6 @@
 /* Global */
 :root {
-  /* Color */
+    /* Color */
     --color-white: #ffffff;
     --color-light-white: #eeeeee;
     --color-dark-white: #bdbdbd;
@@ -14,47 +14,56 @@
     --color-yellow: #fff7d1;
     --color-orange: #feb546;
     --color-black: #000000;
-  /* Font size */
+
+    /* Font size */
     --font-large: 48px;
     --font-medium: 28px;
     --font-regular: 18px;
     --font-small: 16px;
     --font-micro: 14px;
-  /* Font weight */
+
+    /* Font weight */
     --weight-bold: 700;
     --weight-semi-bold: 600;
     --weight-regular: 400;
-  /* Size */
+
+    /* Size */
     --size-border-radius: 4px;
-  /* Annimation */
+
+    /* Annimation */
     --animation-duration: 300ms;
 }
-/* Universal tags */
-* {
+
+  * {
     box-sizing: border-box;
 }
+
 body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
 }
+
 a {
     text-decoration: none;
     color: var(--color-white);
 }
+
 ul {
     padding-left: 0;
 }
+
 li {
     list-style: none;
 }
+
 button {
     background-color: transparent;
     cursor: pointer;
     border: none;
     outline: none;
-    padding: 0;
 }
-/* Typography */
+
+  /* Typography */
 h1 {
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
@@ -67,12 +76,14 @@ h2 {
     color: var(--color-black);
     margin: 8px 0;
 }
+
 h3 {
     font-size: var(--font-regular);
     font-weight: var(--font-regular);
     color: var(--color-black);
     margin: 8px 0;
 }
+
 p {
     font-size: var(--font-regular);
     font-weight: var(--font-regular);
@@ -80,7 +91,7 @@ p {
     margin: 4px 0;
 }
 
-/* Navbar */
+  /* Navbar */
 #navbar {
     background-color: var(--color-pink);
     display: flex;
@@ -89,49 +100,50 @@ p {
     padding: 16px;
 }
 
-.navbar_logo {
+.navbar__logo {
     font-size: var(--font-medium);
-    color: var(--color--white);
+    color: var(--color-white);
     font-weight: var(--weight-bold);
 }
 
-.navbar_menu{
+.navbar__menu {
     display: flex;
 }
+
 .navbar__menu__item {
     padding: 8px 12px;
     margin: 0 4px;
-    color : var(--color-white);
+    color: var(--color-white);
     cursor: pointer;
 }
 
-.navbar__menu__item.active{
+.navbar__menu__item.active {
     border: 1px solid var(--color-white);
     border-radius: var(--size-border-radius);
 }
 
-.navbar__menu__item:hover{
+.navbar__menu__item:hover {
     background-color: var(--color-dark-pink);
     border-radius: var(--size-border-radius);
 }
 
-/* Home */
-#home{
-    background:url(../imgs/Jobs/로고....png) center/cover no-repeat;
+  /* Home */
+#home {
+    background: url(../imgs/testimonial/home-background.png) center/cover no-repeat;
     padding: 40px;
     text-align: center;
-} 
+}
 
-.home__avater {
+.home__avatar {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border:2px solid var(--color-white);
+    border: 2px solid var(--color-white);
 }
 
 .home__title,
 .home__description {
-    color : var(--color-white);
+    color: var(--color-white);
 }
 
 .home__contact {
@@ -144,25 +156,27 @@ p {
     padding: 8px 12px;
 }
 
-/* Section common */
-.senction {
+  /* Section common */
+.section {
     padding: 50px;
     text-align: center;
-    margin :auto;
+    margin: auto;
 }
 
-.senction__container {
+.section__container {
     max-width: 1200px;
     margin: auto;
 }
-/* About */
+
+  /* About */
 .about__majors {
     display: flex;
     justify-content: space-between;
     margin: 80px 0;
 }
+
 .major__icon {
-    width:170px;
+    width: 170px;
     height: 170px;
     font-size: 70px;
     line-height: 170px;
@@ -172,6 +186,7 @@ p {
     border-radius: 50%;
     margin-bottom: 16px;
 }
+
 .major__icon:hover i {
     color: var(--color-pink);
     transform: rotate(-30deg) scale(1.1);
@@ -180,6 +195,7 @@ p {
 .major__icon i {
     transition: all var(--animation-duration) ease;
 }
+
 .major__title,
 .major__description {
     color: var(--color-dark-grey);
@@ -189,7 +205,7 @@ p {
     font-size: var(--font-small);
 }
 
-.job{
+.job {
     display: flex;
     align-items: center;
 }
@@ -207,7 +223,7 @@ p {
     font-size: var(--font-micro);
 }
 
-/* Skills */
+  /* Skills */
 #skills {
     background-color: var(--color-yellow);
 }
@@ -249,7 +265,7 @@ p {
     background-color: var(--color-orange);
 }
 
-.skill__right {
+.skillset__right {
     flex-basis: 40%;
 }
 
@@ -257,7 +273,7 @@ p {
     background-color: var(--color-grey);
 }
 
-.tools 
+.tools,
 .etc {
     padding: 20px;
 }
