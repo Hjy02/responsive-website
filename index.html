@@ -7,42 +7,40 @@
     <meta name="description" content="jung's responsive-website">
     <meta name ="author" content="jung"> 
     <link rel ="icon" href ="imgs/Jobs/로고.png">
-    <script>
-        src="https://kit.fontawesome.com/b3ff0b2f81.js"
-        crossorigin="anonymous"
-    </script>
+    <scrip src="https://kit.fontawesome.com/b3ff0b2f81.js" crossorigin="anonymous"></script>
     <title>jung</title>
+    <link rel="stylesheet" href="CSS/index">
 </head>
 <body>
     <!-- Navbar -->
     <nav id="navbar">
-        <div class="navbar_logo">
+        <div class="navbar__logo">
             <i class="fab fa-diaspora"></i>
             <a herf="#">jung</a>
         </div>
         <ul class="navbar_menu">
-            <li class="navbar_menu_item">Home</li>
-            <li class="navbar_menu_item">About</li>
-            <li class="navbar_menu_item">Skills</li>
-            <li class="navbar_menu_item">My work</li>
-            <li class="navbar_menu_item">Testimonials</li>
-            <li class="navbar_menu_item">Contact</li>
+            <li class="navbar__menu__item active">Home</li>
+            <li class="navbar__menu__item">About</li>
+            <li class="navbar__menu__item">Skills</li>
+            <li class="navbar__menu__item">My work</li>
+            <li class="navbar__menu__item">Testimonials</li>
+            <li class="navbar__menu__item">Contact</li>
         </ul> 
     </nav>
     <!-- Home -->
     <section id="home">
-        <img src="imgs/Jobs/달.jpg" alt="profile img" class="home_avatar">
-        <hl class="home_title">Hello, <br/> Hello</hl>
-        <h2 class="home_description">I live in Incheon</h2>
-        <button class ="home_contact">Contact Me</button>
+        <img src="imgs/Jobs/달.jpg" alt="profile img" class="home__avatar">
+        <h1 class="home__title">Hello, <br/> Hello</h1>
+        <h2 class="home__description">I live in Incheon</h2>
+        <button class ="home__contact">Contact Me</button>
     </section>
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
         <h1>About me</h1>
         <p>
             I live in Incheon
         </p>
-        <div class="about_major">
+        <div class="about__major">
             <div class="major">
                 <div class="major__icon">
                     <i class="fab fa-html5"></i>
@@ -81,7 +79,7 @@
         <div class="job">
                 <img src="imgs/Jobs/로고....png" alt="bcu" class="job__loge">
                 <div class="job__description">
-                <p.class="job__name">
+                <p class="job__name">
                     I am currently attending Bucheon University.
             </p>
             <P class="job__period">
@@ -92,7 +90,7 @@
     <div class="job">
                 <img src="imgs/Jobs/로고....png" alt="bcu" class="job__logo">
                 <div class="job__description">
-                <p.class="job__name">
+                <p class="job__name">
                     I am currently attending Bucheon University.
                 </p>
                 <P class="job__period">
