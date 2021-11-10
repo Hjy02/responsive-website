@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="CSS/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b3ff0b2f81.js" crossorigin="anonymous"></script>
+    </script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -20,24 +22,27 @@
             <a href="#">jung</a>
         </div>
             <ul class="navbar__menu">
-                <li class="navbar__menu__item">Home</li>
-                <li class="navbar__menu__item">About</li>
-                <li class="navbar__menu__item">Skills</li>
-                <li class="navbar__menu__item">My work</li>
-                <li class="navbar__menu__item">Testimonial</li>
-                <li class="navbar__menu__item">Contact</li>
+                <li class="navbar__menu__item" data-link="#home">Home</li>
+                <li class="navbar__menu__item" data-link="#about">About</li>
+                <li class="navbar__menu__item" data-link="#skills">Skills</li>
+                <li class="navbar__menu__item" data-link="#work">My work</li>
+                <li class="navbar__menu__item" data-link="#testimonial"> Testimonial</li>
+                <li class="navbar__menu__item" data-link="#contact">Contact</li>
             </ul>
         <!-- Toggle button -->
-            <button class="navbar__toggle-btn">
+            <button class="
+            navbar__toggle-btn">
             <i class="fas fa-bars"></i>
             </button>
     </nav>
     <!-- Home -->
     <section id="home">
-        <img src="imgs/Jobs/이미지.jpg" alt="profile img" class="home__avatar">
-        <h1 class="home__title">Hello,<br/> I'm Dream Coder</h1>
-        <h2 class="home__description">A software Engineer currently residing in Incheon, Korea.</h2>
-        <button class="home__contact">Contact me</button>
+        <div class="home__container">
+            <img src="imgs/Jobs/이미지.jpg" alt="profile img" class="home__avatar">
+            <h1 class="home__title">Hello,<br/> I'm Dream Coder</h1>
+            <h2 class="home__description">A software Engineer currently residing in Incheon, Korea.</h2>
+            <button class="home__contact">Contact me</button>
+        </div>
     </section>
     <!-- About -->
     <section id="about" class="section section__container">
