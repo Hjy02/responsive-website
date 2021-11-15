@@ -38,7 +38,24 @@ navbarToggleBtn.addEventListener("click", ()=> {
     navbarMenu.classList.toggle("open");
 }) ;
 
-//오른쪽 
+//버튼 arrow-up
+const arrowup = document.querySelector(".arrow-up");
+document.addEventListener("scroll", () => {
+    if(window.scrollY < 1){
+        arrow.styl.opacity = 1;
+    }
+});
+
+const arrow = document.querySelector(".arrow-up"); // arrow-up 셀렉트
+document.addEventListener("scroll",()=>{ // 이벤트 발생시
+    if(window.scrollY < 1){
+        arrow.style.opacity=0;
+    }
+    if(window.scrollY > homeHeight/2){ // 홈 높이에서 절반 사라질시
+        arrow.style.opacity=1;
+    }
+});
+
 
 
 
