@@ -41,25 +41,22 @@ navbarToggleBtn.addEventListener("click", ()=> {
 //버튼 arrow-up
 const arrowup = document.querySelector(".arrow-up");
 document.addEventListener("scroll", () => {
-    if(window.scrollY < 1){
-        arrow.styl.opacity = 1;
-    }
+    if (this.scrollY > 20){
+    arrowup.style.opacity = 1;
+    }else {
+        arrowup.style.opacity = 0;
+    };
 });
 
-const arrow = document.querySelector(".arrow-up"); // arrow-up 셀렉트
-document.addEventListener("scroll",()=>{ // 이벤트 발생시
-    if(window.scrollY < 1){
-        arrow.style.opacity=0;
-    }
-    if(window.scrollY > homeHeight/2){ // 홈 높이에서 절반 사라질시
-        arrow.style.opacity=1;
-    }
+const arrowbtn = document.querySelector(".arrow-up");
+contactMeBtn.addEventListener("click", ()=> {
+    scrollIntoView("#home");
 });
-
-
 
 
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({ behavior: "smooth" });
     }
+
+    
