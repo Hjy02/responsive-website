@@ -25,6 +25,7 @@ const contactMeBtn = document.querySelector(".home__contact");
 contactMeBtn.addEventListener("click", ()=> {
     scrollIntoView("#contact");
 });
+
 //home  투명도 조절
 const home = document.querySelector(".home__container");
 const homeHeight = home.getBoundingClientRect().height;
@@ -38,20 +39,24 @@ navbarToggleBtn.addEventListener("click", ()=> {
     navbarMenu.classList.toggle("open");
 }) ;
 
-//버튼 arrow-up
-const arrowup = document.querySelector(".arrow-up");
+
+
+//위로 가기 버튼
+const arrowup = document.querySelector('.arrow-up');
 document.addEventListener("scroll", () => {
-    if (this.scrollY > 20){
-    arrowup.style.opacity = 1;
+    if (window.scrollY > homeHeight/2){
+        arrowup.classList.add('visible');
     }else {
-        arrowup.style.opacity = 0;
-    };
+        arrowup.classList.remove('visible');
+    }
 });
 
-const arrowbtn = document.querySelector(".arrow-up");
-contactMeBtn.addEventListener("click", ()=> {
+const arrowBtn = document.querySelector(".arrow-up");
+arrowBtn.addEventListener("click", ()=> {
     scrollIntoView("#home");
 });
+// 위로 가기 버튼 클릭
+
 
 
 function scrollIntoView(selector) {
