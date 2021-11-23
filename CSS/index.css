@@ -14,6 +14,11 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
+  --color-puple: #9661b4;
+  --color-light-puple: #57336d;
+  --color-dark-puple: #9b4aca;
+  --color-l-puple: #e9d9f1;
+
 
   /* Font size */
   --font-large: 48px;
@@ -107,7 +112,7 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-pink);
+  background-color: var(--color-puple);
   /* padding: 8px; */
 }
 
@@ -132,7 +137,7 @@ p {
 .navbar__menu__item:hover {
   border: 1px solid white;
   border-radius: var(--size-border-radius);
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-dark-puple);
   border-radius: var(--size-border-radius);
 }
 
@@ -202,8 +207,8 @@ p {
   line-height: 170px;
   font-size: 70px;
   margin: auto;
-  color: var(--color-blue);
-  border: 1px solid var(--color-blue);
+  color: var(--color-light-puple);
+  border: 1px solid var(--color-light-puple);
   border-radius: 50%;
   margin-bottom: 16px;
 }
@@ -213,7 +218,7 @@ p {
 }
 
 .major__icon:hover i {
-  color: var(--color-pink);
+  color: var(--color-puple);
   transform: rotate(-30deg) scale(1.1);
 }
 
@@ -252,12 +257,12 @@ p {
 /* Skill */
 
 #skills {
-  background-color: var(--color-yellow);
+  background-color: var(--color-l-puple);
 }
 
 .skillset {
   display: flex;
-  background-color: var(--color-light-grey);
+  background-color: var(--color-puple);
   color: var(--color-light-white);
   margin: 20px 0;
 }
@@ -267,7 +272,7 @@ p {
 }
 .skillset__left {
   flex-basis: 60%;
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-light-puple);
   padding: 20px 40px;
 }
 
@@ -319,7 +324,7 @@ p {
 
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-pink);
+  background-color: var(--color-puple);
   color: var(--color-white);
 }
 
@@ -416,7 +421,7 @@ p {
 
 /* Testimonial */
 #testimonials {
-  background-color: var(--color-light-white);
+  background-color: var(--color-l-puple);
 }
 
 .testimonials {
@@ -453,12 +458,12 @@ p {
 }
 
 .testimonial__speech-bubble a {
-  color: var(--color-pink);
+  color: var(--color-light-puple);
 }
 
 /* Contact */
 #contact {
-  background-color: var(--color-pink);
+  background-color: var(--color-puple);
 }
 
 .contact__title,
@@ -493,7 +498,7 @@ p {
   opacity: 0;
   pointer-events: none;
   color: var(--color-white);
-  background-color: var(--color-pink);
+  background-color: var(--color-dark-puple);
   border-radius: 50%;
   transition: opacity 300ms ease-in;
 }
